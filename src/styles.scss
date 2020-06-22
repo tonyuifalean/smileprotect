@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-color: white;
+    margin: 0;
+}
+
+#darkLayer {
+    min-height: 100vh;
+}
+
+/* Buttons styling */
+.btn-primary {
+    background-color: #1A6E54;
+    border-color: #1A6E54;
+
+    &:hover { 
+        background-color: #155843;
+        border-color: #155843;
+    }
+} 

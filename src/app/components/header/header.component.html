@@ -1,0 +1,29 @@
+<div class="header-wrapper">
+  <div class="notification" *ngIf="showNotification">
+    <div class="container">
+      Black lives matter
+      <span class="close-button" (click)="onCloseClick()">X</span>
+    </div>
+  </div>
+
+  <!-- Toolbar -->
+  <div class="toolbar" role="banner">
+    <div class="container align-items-center">
+      <img alt="Smile Protect Logo" src="assets/images/tooth.png" />
+      <span>Smile Protect</span>
+      <div class="spacer"></div>
+
+      <!-- nav -->
+      <nav class="navbar navbar-expand">
+        <div class="navbar-nav" *ngIf="currentUser">
+          <a class="nav-item nav-link" routerLink="/">Home</a>
+          <a class="nav-item nav-link" routerLink="/history">History</a>
+          <a class="nav-item nav-link" (click)="logout()">Logout</a>
+        </div>
+        <div class="navbar-nav" *ngIf="!currentUser">
+            <a class="nav-item nav-link" routerLink="/">Login</a>
+          </div>
+      </nav>
+    </div>
+  </div>
+</div>
