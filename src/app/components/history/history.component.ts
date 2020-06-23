@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-history',
@@ -7,9 +7,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HistoryComponent implements OnInit {
 
-  constructor() { }
+  public selected: string;
+  public isAdult: boolean;
+
+  constructor(
+    private el: ElementRef,
+    private renderer: Renderer2) {
+      this.selected = '';
+      this.isAdult = true;
+  }
+
 
   ngOnInit() {
   }
 
+  public addHover(event: any) {
+    const element = event.target as HTMLElement;
+    const parent = this.el.nativeElement.querySelector('.' + element.classList[0] + '-parent');
+    this.renderer.addClass(parent, 'hovered');
+  }
+
+  public removeHover(event: any) {
+    const element = event.target as HTMLElement;
+    const parent = this.el.nativeElement.querySelector('.' + element.classList[0] + '-parent');
+    this.renderer.removeClass(parent, 'hovered');
+  }
 }
