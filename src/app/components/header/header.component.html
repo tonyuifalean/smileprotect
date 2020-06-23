@@ -12,18 +12,31 @@
       <img alt="Smile Protect Logo" src="assets/images/tooth.png" />
       <span>Smile Protect</span>
       <div class="spacer"></div>
-
+    
       <!-- nav -->
       <nav class="navbar navbar-expand">
-        <div class="navbar-nav" *ngIf="currentUser">
-          <a class="nav-item nav-link" routerLink="/">Home</a>
-          <a class="nav-item nav-link" routerLink="/history">History</a>
-          <a class="nav-item nav-link" (click)="logout()">Logout</a>
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" routerLink="/">{{ 'HOME' | translate }}</a>
+          <a class="nav-item nav-link" routerLink="/dentists">{{ 'DENTISTS' | translate }}</a>
+          <a class="nav-item nav-link" *ngIf="currentUser" routerLink="/history">{{ 'HISTORY' | translate }}</a>
+          <a class="nav-item nav-link" *ngIf="!currentUser" routerLink="/login">Login</a>
+          <a class="nav-item nav-link" *ngIf="currentUser" (click)="logout()">Logout</a>
         </div>
-        <div class="navbar-nav" *ngIf="!currentUser">
-            <a class="nav-item nav-link" routerLink="/">Login</a>
-          </div>
       </nav>
+
+      <span class="form-inline">
+        <select 
+            id="languageSelection"
+            class="form-control" 
+            #selectedLang 
+            (change)="switchLang(selectedLang.value)">
+          <option *ngFor="let language of translate.getLangs()" 
+            [value]="language"
+            [selected]="language === translate.currentLang">
+            {{ language === 'ro' ? 'Română' : 'English' }}
+          </option>
+        </select>
+      </span>
     </div>
   </div>
 </div>

@@ -10,11 +10,13 @@ body {
 
 /* Buttons styling */
 .btn-primary {
-    background-color: #1A6E54;
-    border-color: #1A6E54;
+    background-color: #3FCE92;
+    border-color: #3FCE92;
 
-    &:hover { 
-        background-color: #155843;
-        border-color: #155843;
+    &:hover,
+    &:active,
+    &:focus { 
+        background-color: #43b887 !important;
+        border-color: #43b887 !important;
     }
 } 

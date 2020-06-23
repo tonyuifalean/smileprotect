@@ -6,17 +6,20 @@ import { AuthGuard } from './helpers';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
-    canActivate: [AuthGuard]
+    component: HomeComponent
   },
   {
-    path: 'login',
-    loadChildren: () => import('./components/login').then(m => m.LoginModule)
+    path: 'dentists',
+    loadChildren: () => import('./components/dentists').then(m => m.DentistsModule)
   },
   {
     path: 'history',
     loadChildren: () => import('./components/history').then(m => m.HistoryModule),
     canActivate: [AuthGuard]
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./components/login').then(m => m.LoginModule)
   },
   { path: '**', redirectTo: '' }
 ];

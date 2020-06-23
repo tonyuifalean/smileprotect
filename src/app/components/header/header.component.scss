@@ -6,7 +6,7 @@ a {
   border-bottom: 3px solid transparent;
 
   &:hover {
-    border-bottom-color: #1A6E54;
+    border-bottom-color: white;
   }
 }
 
@@ -70,6 +70,20 @@ a {
     svg {
       color: white !important;
       fill: white !important;
+    }
+
+    #languageSelection {
+      background-color: inherit;
+      border: none;
+      color: inherit;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
+      outline: none;
+
+      &:focus {
+        box-shadow: none;
+      }
     }
   }
 }

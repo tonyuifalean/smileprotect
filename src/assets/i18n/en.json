@@ -1,0 +1,12 @@
+{
+    "HOME": "Home",
+    "HISTORY": "History",
+    "DENTISTS": "Dentists",
+    "USERNAME": "Username",
+    "FIELD": "Field",
+    "PASSWORD": "Password",
+    "IS_REQUIRED": "is required",
+    "SMILE_PROTECT_QUEST": "Are you protecting your smile?",
+    "LAST_DENTIST_VISIT_QUEST": "When was the last time you've visited a dentist?",
+    "VIEW_HISTORY": "View history"
+}
