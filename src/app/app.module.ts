@@ -13,7 +13,7 @@ import { fakeBackendProvider, JwtInterceptor, ErrorInterceptor } from './helpers
 import { FooterComponent } from './components/footer/footer.component';
 
 export function TranslationLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http);
+  return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
 }
 
 @NgModule({
@@ -29,7 +29,7 @@ export function TranslationLoaderFactory(http: HttpClient) {
     HttpClientModule,
     BrowserAnimationsModule,
     TranslateModule.forRoot({
-      loader: {provide: TranslateLoader, useFactory: TranslationLoaderFactory, deps: [HttpClient]}
+      loader: { provide: TranslateLoader, useFactory: TranslationLoaderFactory, deps: [HttpClient] }
     })
   ],
   providers: [

@@ -1,9 +1,7 @@
 <div class="header-wrapper">
   <div class="notification" *ngIf="showNotification">
-    <div class="container">
-      Black lives matter
-      <span class="close-button" (click)="onCloseClick()">X</span>
-    </div>
+    Black lives matter
+    <span class="close-button" (click)="onCloseClick()">X</span>
   </div>
 
   <!-- Toolbar -->
@@ -12,7 +10,7 @@
       <img alt="Smile Protect Logo" src="assets/images/tooth.png" />
       <span>Smile Protect</span>
       <div class="spacer"></div>
-    
+
       <!-- nav -->
       <nav class="navbar navbar-expand">
         <div class="navbar-nav">
@@ -25,13 +23,8 @@
       </nav>
 
       <span class="form-inline">
-        <select 
-            id="languageSelection"
-            class="form-control" 
-            #selectedLang 
-            (change)="switchLang(selectedLang.value)">
-          <option *ngFor="let language of translate.getLangs()" 
-            [value]="language"
+        <select id="languageSelection" class="form-control" #selectedLang (change)="switchLang(selectedLang.value)">
+          <option *ngFor="let language of translate.getLangs()" [value]="language"
             [selected]="language === translate.currentLang">
             {{ language === 'ro' ? 'Română' : 'English' }}
           </option>
