@@ -8,5 +8,7 @@
     "IS_REQUIRED": "is required",
     "SMILE_PROTECT_QUEST": "Are you protecting your smile?",
     "LAST_DENTIST_VISIT_QUEST": "When was the last time you've visited a dentist?",
-    "VIEW_HISTORY": "View history"
+    "VIEW_HISTORY": "View history",
+    "HOME_PAGE_OFFER_PATIENT": "What we offer for patients",
+    "HOME_PAGE_OFFER_DOCTOR": "What we offer for doctors"
 }

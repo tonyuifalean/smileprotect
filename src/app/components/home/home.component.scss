@@ -1,13 +1,24 @@
-img {   
-    width: 100%;
+img {
+  width: 100%;
 }
 
 #welcomeWrapper {
-    background-image: url('../../../assets/images/dentist.jpg');
-    height: 600px;
+  background-image: url('../../../assets/images/dentist.jpg');
+  height: 600px;
 
-    #welcomeMessage {
-        height: 100%;
-        margin: 0;
-    }
+  #welcomeMessage {
+    animation: 2s ease-out 0s 1 slideInFromRight;
+    height: 100%;
+    margin: 0;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
