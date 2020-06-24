@@ -1,7 +1,12 @@
-.hovered {
-    fill: red !important;
-}
-
 #historyWrapper .row { 
     margin: 0;
+
+    path {
+        &.hovered {
+            fill: rgba(255, 0, 0, 0.651) !important;
+        }
+        &.selected {
+            fill: red !important;
+        }
+    }
 }
