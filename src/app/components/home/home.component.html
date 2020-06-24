@@ -11,7 +11,7 @@
   </div>
 </div>
 <div class="container">
-  <h1 class="text-center mt-5">{{ 'HOME_PAGE_OFFER_PATIENT' | translate }}</h1>
+  <h1 class="text-center mt-5">{{ 'HOME_OFFER_PATIENT' | translate }}</h1>
   <div class="row mt-5">
     <span class="col-md-6">
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -26,7 +26,11 @@
       occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     </span>
   </div>
-  <h1 class="text-center mt-5">{{ 'HOME_PAGE_OFFER_DOCTOR' | translate }}</h1>
+  <h1 class="text-center mt-5">{{ 'HOME_DENTIST_LIST' | translate }}</h1>
+  <div id="dentistGalleryWrapper">
+    <ngx-gallery [options]="dentistGalleryOptions" [images]="dentistGalleryImages"></ngx-gallery>
+  </div>
+  <h1 class="text-center mt-5">{{ 'HOME_OFFER_DOCTOR' | translate }}</h1>
   <div class="row mt-5">
     <span class="col-md-6">
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna

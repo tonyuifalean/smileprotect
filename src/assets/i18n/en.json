@@ -9,6 +9,9 @@
     "SMILE_PROTECT_QUEST": "Are you protecting your smile?",
     "LAST_DENTIST_VISIT_QUEST": "When was the last time you've visited a dentist?",
     "VIEW_HISTORY": "View history",
-    "HOME_PAGE_OFFER_PATIENT": "What we offer for patients",
-    "HOME_PAGE_OFFER_DOCTOR": "What we offer for doctors"
+    "HOME_OFFER_PATIENT": "What we offer for patients",
+    "HOME_DENTIST_LIST": "Dentists who protect your smile",
+    "HOME_OFFER_DOCTOR": "What we offer for doctors",
+    "HISTORY_DESCRIPTION_WHITENING": "Whitening",
+    "HISTORY_DESCRIPTION_COSMETIC": "Cosmetic Braces"
 }

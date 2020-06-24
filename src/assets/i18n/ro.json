@@ -9,6 +9,9 @@
     "SMILE_PROTECT_QUEST": "Ai grijă de zâmbetul tău?",
     "LAST_DENTIST_VISIT_QUEST": "Când a fost ultima ta vizită la un medic stomatolog?",
     "VIEW_HISTORY": "Vezi istoric",
-    "HOME_PAGE_OFFER_PATIENT": "Ce oferim pentru pacienți",
-    "HOME_PAGE_OFFER_DOCTOR": "Ce oferim pentru doctori"
+    "HOME_OFFER_PATIENT": "Ce oferim pentru pacienți",
+    "HOME_DENTIST_LIST": "Stomatologii care îți protejează zâmbetul",
+    "HOME_OFFER_DOCTOR": "Ce oferim pentru doctori",
+    "HISTORY_DESCRIPTION_WHITENING": "Albire",
+    "HISTORY_DESCRIPTION_COSMETIC": "Braketi cosmetici"
 }

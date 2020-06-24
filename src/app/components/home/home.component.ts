@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
-import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gallery-9';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation, NgxGalleryImageSize } from 'ngx-gallery-9';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+
 })
 export class HomeComponent implements OnInit {
 
   public galleryOptions: NgxGalleryOptions[];
   public galleryImages: NgxGalleryImage[];
+
+  public dentistGalleryOptions: NgxGalleryOptions[];
+  public dentistGalleryImages: NgxGalleryImage[];
 
   constructor() { }
 
@@ -42,7 +46,78 @@ export class HomeComponent implements OnInit {
         big: 'assets/images/dentist_3.jpg'
       }
     ];
+    this.dentistGalleryOptions = [
+      {
+        image: false,
+        height: '100%',
+        width: '100%',
+        preview: false,
+        thumbnailSize: NgxGalleryImageSize.Contain
+      }
+    ];
 
+    this.dentistGalleryImages = [
+      {
+        small: 'assets/images/profile_1.jpg',
+        medium: 'assets/images/profile_1.jpg',
+        big: 'assets/images/profile_1.jpg'
+      },
+      {
+        small: 'assets/images/profile_2.jpg',
+        medium: 'assets/images/profile_2.jpg',
+        big: 'assets/images/profile_2.jpg'
+      },
+      {
+        small: 'assets/images/profile_3.jpg',
+        medium: 'assets/images/profile_3.jpg',
+        big: 'assets/images/profile_3.jpg'
+      },
+      {
+        small: 'assets/images/profile_4.jpg',
+        medium: 'assets/images/profile_4.jpg',
+        big: 'assets/images/profile_4.jpg'
+      },
+      {
+        small: 'assets/images/profile_1.jpg',
+        medium: 'assets/images/profile_1.jpg',
+        big: 'assets/images/profile_1.jpg'
+      },
+      {
+        small: 'assets/images/profile_2.jpg',
+        medium: 'assets/images/profile_2.jpg',
+        big: 'assets/images/profile_2.jpg'
+      },
+      {
+        small: 'assets/images/profile_3.jpg',
+        medium: 'assets/images/profile_3.jpg',
+        big: 'assets/images/profile_3.jpg'
+      },
+      {
+        small: 'assets/images/profile_4.jpg',
+        medium: 'assets/images/profile_4.jpg',
+        big: 'assets/images/profile_4.jpg'
+      },
+      {
+        small: 'assets/images/profile_1.jpg',
+        medium: 'assets/images/profile_1.jpg',
+        big: 'assets/images/profile_1.jpg'
+      },
+      {
+        small: 'assets/images/profile_2.jpg',
+        medium: 'assets/images/profile_2.jpg',
+        big: 'assets/images/profile_2.jpg'
+      },
+      {
+        small: 'assets/images/profile_3.jpg',
+        medium: 'assets/images/profile_3.jpg',
+        big: 'assets/images/profile_3.jpg'
+      },
+      {
+        small: 'assets/images/profile_4.jpg',
+        medium: 'assets/images/profile_4.jpg',
+        big: 'assets/images/profile_4.jpg'
+      }
+    ];
   }
 
 }
