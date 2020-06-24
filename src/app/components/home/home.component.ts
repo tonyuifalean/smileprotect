@@ -58,64 +58,64 @@ export class HomeComponent implements OnInit {
 
     this.dentistGalleryImages = [
       {
-        small: 'assets/images/profile_1.jpg',
-        medium: 'assets/images/profile_1.jpg',
-        big: 'assets/images/profile_1.jpg'
+        small: 'assets/images/profile_1.png',
+        medium: 'assets/images/profile_1.png',
+        big: 'assets/images/profile_1.png'
       },
       {
-        small: 'assets/images/profile_2.jpg',
-        medium: 'assets/images/profile_2.jpg',
-        big: 'assets/images/profile_2.jpg'
+        small: 'assets/images/profile_2.png',
+        medium: 'assets/images/profile_2.png',
+        big: 'assets/images/profile_2.png'
       },
       {
-        small: 'assets/images/profile_3.jpg',
-        medium: 'assets/images/profile_3.jpg',
-        big: 'assets/images/profile_3.jpg'
+        small: 'assets/images/profile_3.png',
+        medium: 'assets/images/profile_3.png',
+        big: 'assets/images/profile_3.png'
       },
       {
-        small: 'assets/images/profile_4.jpg',
-        medium: 'assets/images/profile_4.jpg',
-        big: 'assets/images/profile_4.jpg'
+        small: 'assets/images/profile_4.png',
+        medium: 'assets/images/profile_4.png',
+        big: 'assets/images/profile_4.png'
       },
       {
-        small: 'assets/images/profile_1.jpg',
-        medium: 'assets/images/profile_1.jpg',
-        big: 'assets/images/profile_1.jpg'
+        small: 'assets/images/profile_1.png',
+        medium: 'assets/images/profile_1.png',
+        big: 'assets/images/profile_1.png'
       },
       {
-        small: 'assets/images/profile_2.jpg',
-        medium: 'assets/images/profile_2.jpg',
-        big: 'assets/images/profile_2.jpg'
+        small: 'assets/images/profile_2.png',
+        medium: 'assets/images/profile_2.png',
+        big: 'assets/images/profile_2.png'
       },
       {
-        small: 'assets/images/profile_3.jpg',
-        medium: 'assets/images/profile_3.jpg',
-        big: 'assets/images/profile_3.jpg'
+        small: 'assets/images/profile_3.png',
+        medium: 'assets/images/profile_3.png',
+        big: 'assets/images/profile_3.png'
       },
       {
-        small: 'assets/images/profile_4.jpg',
-        medium: 'assets/images/profile_4.jpg',
-        big: 'assets/images/profile_4.jpg'
+        small: 'assets/images/profile_4.png',
+        medium: 'assets/images/profile_4.png',
+        big: 'assets/images/profile_4.png'
       },
       {
-        small: 'assets/images/profile_1.jpg',
-        medium: 'assets/images/profile_1.jpg',
-        big: 'assets/images/profile_1.jpg'
+        small: 'assets/images/profile_1.png',
+        medium: 'assets/images/profile_1.png',
+        big: 'assets/images/profile_1.png'
       },
       {
-        small: 'assets/images/profile_2.jpg',
-        medium: 'assets/images/profile_2.jpg',
-        big: 'assets/images/profile_2.jpg'
+        small: 'assets/images/profile_2.png',
+        medium: 'assets/images/profile_2.png',
+        big: 'assets/images/profile_2.png'
       },
       {
-        small: 'assets/images/profile_3.jpg',
-        medium: 'assets/images/profile_3.jpg',
-        big: 'assets/images/profile_3.jpg'
+        small: 'assets/images/profile_3.png',
+        medium: 'assets/images/profile_3.png',
+        big: 'assets/images/profile_3.png'
       },
       {
-        small: 'assets/images/profile_4.jpg',
-        medium: 'assets/images/profile_4.jpg',
-        big: 'assets/images/profile_4.jpg'
+        small: 'assets/images/profile_4.png',
+        medium: 'assets/images/profile_4.png',
+        big: 'assets/images/profile_4.png'
       }
     ];
   }
