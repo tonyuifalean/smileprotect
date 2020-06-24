@@ -208,6 +208,5 @@ export class HistoryComponent implements OnInit {
     const selectedArr = element.classList[1].split('-');
     this.selected = parseInt(selectedArr[1], 0);
     this.selectedVisits = this.visits.filter((visit: Visit) => visit.toothId === this.selected);
-    console.log(this.selectedVisits);
   }
 }

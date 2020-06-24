@@ -11,6 +11,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { fakeBackendProvider, JwtInterceptor, ErrorInterceptor } from './helpers';
 import { FooterComponent } from './components/footer/footer.component';
+import { NgxGalleryModule } from 'ngx-gallery-9';
 
 export function TranslationLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
@@ -30,7 +31,8 @@ export function TranslationLoaderFactory(http: HttpClient) {
     BrowserAnimationsModule,
     TranslateModule.forRoot({
       loader: { provide: TranslateLoader, useFactory: TranslationLoaderFactory, deps: [HttpClient] }
-    })
+    }),
+    NgxGalleryModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },

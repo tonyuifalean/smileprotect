@@ -1,6 +1,7 @@
 <div id="welcomeWrapper">
+  <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
   <div id="welcomeMessage" class="row align-items-center">
-    <div class="col-6 offset-md-1">
+    <div class="col-md-6 col-sm-12 offset-md-1">
       <h1>{{ 'SMILE_PROTECT_QUEST' | translate }}</h1>
       <h2>{{ 'LAST_DENTIST_VISIT_QUEST' | translate }}</h2>
       <a class="btn btn-primary" routerLink="/history">
