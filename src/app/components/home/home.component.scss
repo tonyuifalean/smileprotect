@@ -43,6 +43,11 @@ img {
   }
 }
 
+.card-img-top {
+  color: #3FCE92;
+  font-size: 80px;
+}
+
 @keyframes slideInFromRight {
   0% {
     transform: translateX(100%);

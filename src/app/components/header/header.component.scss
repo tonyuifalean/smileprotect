@@ -45,16 +45,13 @@
     height: 20px;
   }
 
-  a {
-    color: white;
-  }
-
   #navbarNavDropdown {
     flex-grow: unset;
     
     .nav-link {
       border-top: 3px solid transparent;
       border-bottom: 3px solid transparent;
+      font-weight: bold;
       
       &:not(.lang-swither) {
         color: white;
