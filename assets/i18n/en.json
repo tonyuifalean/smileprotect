@@ -14,9 +14,9 @@
     },
     "HOME_PAGE": {
         "VIEW_HISTORY": "View history",
-        "OFFER_PATIENT": "What we offer for patients",
+        "OFFER_PATIENT": "Options for Pacients",
         "DENTIST_LIST": "Dentists who protect your smile",
-        "OFFER_DOCTOR": "What we offer for doctors"
+        "OFFER_DOCTOR": "Options for Dentists"
     },
     "HISTORY_PAGE": {
         "DESCRIPTION_WHITENING": "Whitening",
