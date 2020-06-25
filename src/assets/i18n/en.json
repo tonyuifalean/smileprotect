@@ -8,10 +8,18 @@
     "IS_REQUIRED": "is required",
     "SMILE_PROTECT_QUEST": "Are you protecting your smile?",
     "LAST_DENTIST_VISIT_QUEST": "When was the last time you've visited a dentist?",
-    "VIEW_HISTORY": "View history",
-    "HOME_OFFER_PATIENT": "What we offer for patients",
-    "HOME_DENTIST_LIST": "Dentists who protect your smile",
-    "HOME_OFFER_DOCTOR": "What we offer for doctors",
-    "HISTORY_DESCRIPTION_WHITENING": "Whitening",
-    "HISTORY_DESCRIPTION_COSMETIC": "Cosmetic Braces"
+    "FOOTER": {
+        "DENTISTS": "Dentists",
+        "BUSINESS_HOURS": "Business Hours"
+    },
+    "HOME_PAGE": {
+        "VIEW_HISTORY": "View history",
+        "OFFER_PATIENT": "What we offer for patients",
+        "DENTIST_LIST": "Dentists who protect your smile",
+        "OFFER_DOCTOR": "What we offer for doctors"
+    },
+    "HISTORY_PAGE": {
+        "DESCRIPTION_WHITENING": "Whitening",
+        "DESCRIPTION_COSMETIC": "Cosmetic Braces"
+    }
 }

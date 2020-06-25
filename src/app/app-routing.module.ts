@@ -6,6 +6,10 @@ import { AuthGuard } from './helpers';
 const routes: Routes = [
   {
     path: '',
+    redirectTo: 'home',
+    pathMatch: 'full' },
+  {
+    path: 'home',
     component: HomeComponent
   },
   {
