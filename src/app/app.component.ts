@@ -1,5 +1,6 @@
-import { Component, HostListener} from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { log } from 'console';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,8 @@ export class AppComponent {
   public onWindowScroll(e: any) {
     const element = document.querySelector('.navbar');
     const notification = document.querySelector('.notification');
-    if (window.pageYOffset > element.clientHeight) {
+    if ((!!notification && window.pageYOffset > notification.clientHeight) ||
+      (!notification && window.pageYOffset > element.clientHeight)) {
       element.classList.add('navbar-layer');
       if (!!notification) {
         notification.classList.add('notification-layer');

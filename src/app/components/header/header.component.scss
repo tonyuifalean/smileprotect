@@ -52,16 +52,18 @@
   #navbarNavDropdown {
     flex-grow: unset;
     
-    .nav-link:not(.lang-swither) {
-      color: white;
-      cursor: pointer;
-
+    .nav-link {
       border-top: 3px solid transparent;
       border-bottom: 3px solid transparent;
+      
+      &:not(.lang-swither) {
+        color: white;
+        cursor: pointer;
 
-      &:hover,
-      &.active {
-        border-bottom-color: white;
+        &:hover,
+        &.active {
+          border-bottom-color: white;
+        }
       }
     }
   }
