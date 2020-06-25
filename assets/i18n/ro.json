@@ -1,17 +1,25 @@
 {
     "HOME": "Acasă",
     "HISTORY": "Istoric",
-    "DENTISTS": "Stomatologi",
+    "DENTISTS": "Dentiști",
     "USERNAME": "Utilizator",
     "FIELD": "Câmp",
     "PASSWORD": "Parola",
     "IS_REQUIRED": "e obligatoriu",
     "SMILE_PROTECT_QUEST": "Ai grijă de zâmbetul tău?",
     "LAST_DENTIST_VISIT_QUEST": "Când a fost ultima ta vizită la un medic stomatolog?",
-    "VIEW_HISTORY": "Vezi istoric",
-    "HOME_OFFER_PATIENT": "Ce oferim pentru pacienți",
-    "HOME_DENTIST_LIST": "Stomatologii care îți protejează zâmbetul",
-    "HOME_OFFER_DOCTOR": "Ce oferim pentru doctori",
-    "HISTORY_DESCRIPTION_WHITENING": "Albire",
-    "HISTORY_DESCRIPTION_COSMETIC": "Braketi cosmetici"
+    "FOOTER": {
+        "DENTISTS": "Dentiști",
+        "BUSINESS_HOURS": "Program"
+    },
+    "HOME_PAGE": {
+        "VIEW_HISTORY": "Vezi istoric",
+        "OFFER_PATIENT": "Ce oferim pentru pacienți",
+        "DENTIST_LIST": "Medicii stomatologi care îți protejează zâmbetul",
+        "OFFER_DOCTOR": "Ce oferim pentru medicii stomatologi"
+    },
+    "HISTORY_PAGE": {
+        "DESCRIPTION_WHITENING": "Albire",
+        "DESCRIPTION_COSMETIC": "Braketi cosmetici"
+    }
 }
