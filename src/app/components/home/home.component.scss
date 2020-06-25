@@ -25,21 +25,19 @@ img {
 }
 
 #dentistGalleryWrapper {
+  background-color: #3FCE92;
   height: 225px;
-  ::ng-deep ngx-gallery {
-    background-color: #3FCE92;
-    padding: 10px 0 !important;
-    
-    ngx-gallery-thumbnails {
-      margin: 0 !important;
-      .ngx-gallery-thumbnail {
-        // border-radius: 100%; 
-        // height: 205px !important;
-        // width: 205px !important;
-      }
+  .container {
+    height: 100%;
 
-      .ngx-gallery-arrow { 
-        color: #03A9F4;
+    ::ng-deep ngx-gallery {
+      padding: 10px 0 !important;
+      
+      ngx-gallery-thumbnails {
+        margin: 0 !important;  
+        .ngx-gallery-arrow { 
+          color: #03A9F4;
+        }
       }
     }
   }

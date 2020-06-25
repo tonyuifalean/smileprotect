@@ -1,34 +1,62 @@
-<div class="header-wrapper">
-  <div class="notification" *ngIf="showNotification">
-    Black lives matter
-    <span class="close-button" (click)="onCloseClick()">X</span>
+<div class="notification" *ngIf="showNotification">
+  Black lives matter
+  <span class="close-button" (click)="onCloseClick()">X</span>
+</div>
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+  <a class="navbar-brand" routerLink="/"><img alt="Smile Protect Logo" class="mr-1" src="assets/images/logo_darker.png" />Smile Protect</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/">{{ 'HOME' | translate }}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/dentists">{{ 'DENTISTS' | translate }}</a>
+      </li>
+      <li class="nav-item" *ngIf="currentUser">
+        <a class="nav-item nav-link" routerLink="/history">{{ 'HISTORY' | translate }}</a>
+      </li>
+      <li class="nav-item" *ngIf="!currentUser">
+        <a class="nav-item nav-link" routerLink="/login">Login</a>
+      </li>
+      <li class="nav-item" *ngIf="currentUser">
+        <a class="nav-item nav-link" href="#" (click)="logout()">Logout</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" (click)="switchLang('en')"><img src="assets/images/en.jpg"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" (click)="switchLang('ro')"><img src="assets/images/ro.jpg"></a>
+      </li>
+    </ul>
   </div>
-
+  </div>
+</nav>
   <!-- Toolbar -->
-  <div class="toolbar" role="banner">
-    <div class="container align-items-center">
-      <a id="logoWrapper" routerLink="/"><img alt="Smile Protect Logo" class="mr-1" src="assets/images/logo_darker.png" />Smile Protect</a>
-      <div class="spacer"></div>
+  <!-- <div class="toolbar" role="banner">
+    <div class="container align-items-center"> -->
+      
+      <!-- <div class="spacer"></div> -->
 
       <!-- nav -->
-      <nav class="navbar navbar-expand">
+      <!-- <nav class="navbar navbar-expand">
         <div class="navbar-nav">
           <a class="nav-item nav-link" routerLink="/">{{ 'HOME' | translate }}</a>
           <a class="nav-item nav-link" routerLink="/dentists">{{ 'DENTISTS' | translate }}</a>
           <a class="nav-item nav-link" *ngIf="currentUser" routerLink="/history">{{ 'HISTORY' | translate }}</a>
           <a class="nav-item nav-link" *ngIf="!currentUser" routerLink="/login">Login</a>
           <a class="nav-item nav-link" *ngIf="currentUser" (click)="logout()">Logout</a>
+          <select id="languageSelection" #selectedLang (change)="switchLang(selectedLang.value)">
+            <option *ngFor="let language of translate.getLangs()" [value]="language"
+              [selected]="language === translate.currentLang">
+              {{ language === 'ro' ? 'Română' : 'English' }}
+            </option>
+          </select>
         </div>
-      </nav>
-
-      <span class="form-inline">
-        <select id="languageSelection" class="form-control" #selectedLang (change)="switchLang(selectedLang.value)">
-          <option *ngFor="let language of translate.getLangs()" [value]="language"
-            [selected]="language === translate.currentLang">
-            {{ language === 'ro' ? 'Română' : 'English' }}
-          </option>
-        </select>
-      </span>
-    </div>
-  </div>
-</div>
+      </nav> -->
+    <!-- </div>
+  </div> -->
+<!-- </div> -->
