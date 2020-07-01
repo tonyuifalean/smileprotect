@@ -26,14 +26,29 @@ export class HomeComponent implements OnInit {
         thumbnails: false,
         imageAutoPlay: true,
         imageAutoPlayInterval: 5000
+      },
+      // max-width 800
+      {
+        breakpoint: 800,
+        width: '100%',
+        height: '600px',
+        imagePercent: 80,
+        thumbnailsPercent: 20,
+        thumbnailsMargin: 20,
+        thumbnailMargin: 20
+      },
+      // max-width 400
+      {
+        breakpoint: 400,
+        preview: false
       }
     ];
 
     this.galleryImages = [
       {
         small: 'assets/images/dentist_1.jpg',
-        medium: 'assets/images/dentist_1.jpg',
-        big: 'assets/images/dentist_1.jpg'
+        medium: 'assets/images/dentist_1_medium.jpg',
+        big: 'assets/images/dentist_1_small.jpg'
       },
       {
         small: 'assets/images/dentist_2.jpg',
@@ -44,6 +59,11 @@ export class HomeComponent implements OnInit {
         small: 'assets/images/dentist_3.jpg',
         medium: 'assets/images/dentist_3.jpg',
         big: 'assets/images/dentist_3.jpg'
+      },
+      {
+        small: 'assets/images/dentist_4.jpg',
+        medium: 'assets/images/dentist_4.jpg',
+        big: 'assets/images/dentist_4.jpg'
       }
     ];
     this.dentistGalleryOptions = [
