@@ -1,4 +1,4 @@
-<div id="dentistsWrapper">
+<div id="dentistsWrapper" *ngIf="dentists$ | async as dentists">
     <div class="row">
         <div class="col-12">
             <div class="table-responsive">

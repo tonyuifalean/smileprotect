@@ -14,7 +14,8 @@ const routes: Routes = [
   },
   {
     path: 'dentists',
-    loadChildren: () => import('./components/dentists').then(m => m.DentistsModule)
+    loadChildren: () => import('./components/dentists').then(m => m.DentistsModule),
+    canActivate: [AuthGuard]
   },
   {
     path: 'history',
